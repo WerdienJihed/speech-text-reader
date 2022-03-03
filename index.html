@@ -120,5 +120,82 @@
         </div>
       </div>
     </div>
+    <!-- Change Voice Modal -->
+    <div
+      class="modal fade"
+      id="changeVoiceModal"
+      tabindex="-1"
+      aria-labelledby="changeVoiceLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="changeVoiceLabel">Change Voice</h5>
+          </div>
+          <div class="modal-body">
+            <select class="form-select" id="voice-select"></select>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="cancelVoiceChangeBtn"
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button
+              id="saveVoiceChangeBtn"
+              type="button"
+              class="btn btn-success"
+              data-bs-dismiss="modal"
+            >
+              Save changes
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Read Text Modal -->
+    <div
+      class="modal fade"
+      id="readTextModal"
+      tabindex="-1"
+      aria-labelledby="readTextLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="readTextLabel">Read Text</h5>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="readTextTextarea" class="form-label">Your Text</label>
+              <textarea
+                class="form-control"
+                id="readTextTextarea"
+                rows="5"
+                style="resize: none"
+              ></textarea>
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              id="closeReadTextBtn"
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Close
+            </button>
+            <button id="readTextBtn" type="button" class="btn btn-success">
+              Read Text
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
