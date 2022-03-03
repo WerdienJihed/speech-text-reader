@@ -2,12 +2,20 @@ const modal = document.querySelector("#changeVoiceModal");
 const dropdown = modal.querySelector("#voice-select");
 const saveBtn = modal.querySelector("#saveVoiceChangeBtn");
 
+let synth = window.speechSynthesis;
 let selectedIndex = 0;
 let voices = [];
 let selectedVoice = voices[selectedIndex];
 
 function populateVoiceList() {
-  // set voices
+  voices = synth.getVoices();
+  voices.forEach((voice) => {
+    let option = document.createElement("option");
+    option.textContent = voice.name + " (" + voice.lang + ")";
+    option.setAttribute("data-lang", voice.lang);
+    option.setAttribute("data-name", voice.name);
+    dropdown.appendChild(option);
+  });
 }
 
 const handleSave = () => {
