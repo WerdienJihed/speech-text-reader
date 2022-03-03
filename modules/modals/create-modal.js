@@ -1,11 +1,10 @@
+import { defaultImageUrl } from "./../helper.js";
 const modal = document.querySelector("#createNewItemModal");
 const newItemText = modal.querySelector("#newItemText");
 const errorMessage = modal.querySelector(".invalid-feedback");
 const imageThumbnail = modal.querySelector(".img-thumbnail");
 const imageFileInput = modal.querySelector("#imageFileInput");
 const addBtn = modal.querySelector(".btn-success");
-
-const defaultImageUrl = "/images/default.png";
 
 let myModal = new bootstrap.Modal(
   document.getElementById("createNewItemModal")
