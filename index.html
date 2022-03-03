@@ -76,5 +76,49 @@
     <div class="container mt-4" id="cards-container">
       <div class="row gy-4"></div>
     </div>
+
+    <!-- modals -->
+    <!-- Create New Item Modal -->
+    <div
+      class="modal fade"
+      id="createNewItemModal"
+      tabindex="-1"
+      aria-labelledby="editItemLabel"
+      aria-hidden="true"
+    >
+      <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h5 class="modal-title" id="createNewItemLabel">Create new Item</h5>
+          </div>
+          <div class="modal-body">
+            <div class="mb-3">
+              <label for="exampleFormControlInput1" class="form-label"
+                >Text</label
+              >
+              <input type="text" class="form-control" id="newItemText" />
+              <div class="invalid-feedback d-none">Text is required</div>
+              <div class="mb-3">
+                <label for="imageFileInput" class="form-label">Image</label>
+                <input class="form-control" type="file" id="imageFileInput" />
+              </div>
+            </div>
+            <div class="text-center">
+              <img src="/images/default.png" class="img-thumbnail" alt="..." />
+            </div>
+          </div>
+          <div class="modal-footer">
+            <button
+              type="button"
+              class="btn btn-secondary"
+              data-bs-dismiss="modal"
+            >
+              Cancel
+            </button>
+            <button type="button" class="btn btn-success">Add</button>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>
