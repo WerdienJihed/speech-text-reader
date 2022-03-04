@@ -1,12 +1,9 @@
 import { generateCard } from "./card.js";
 import { selectedVoice } from "./modals/change-voice-modal.js";
-/* Selecting elements */
-const cardsContainer = document.querySelector("#cards-container");
 
-/* Variables */
+const cardsContainer = document.querySelector("#cards-container");
 const defaultImageUrl = "./../images/default.png";
 
-/* Functions */
 const appendColumn = (card, isEditMode) => {
   const placeholder = document.createElement("div");
   const generatedCard = generateCard(card.title, card.imgUrl);

@@ -1,4 +1,4 @@
-import { defaultImageUrl } from "./../helper.js";
+import { appendColumn, defaultImageUrl } from "./../helper.js";
 const modal = document.querySelector("#createNewItemModal");
 const newItemText = modal.querySelector("#newItemText");
 const errorMessage = modal.querySelector(".invalid-feedback");
@@ -20,6 +20,8 @@ const handleAdd = () => {
     imageFileInput.files.length > 0
       ? URL.createObjectURL(imageFileInput.files[0])
       : defaultImageUrl;
+  const card = { title: newItemText.value, imgUrl: src };
+  appendColumn(card, true);
   myModal.hide();
   handleClear();
 };

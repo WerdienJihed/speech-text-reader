@@ -1,4 +1,5 @@
 import { speak } from "./helper.js";
+import { setValues as setEditModalValues } from "./modals/edit-modal.js";
 
 const generateCard = (text, imgUrl) => {
   const placeholder = document.createElement("div");
@@ -35,6 +36,9 @@ const generateCard = (text, imgUrl) => {
   card.querySelector(".card-footer").addEventListener("click", (e) => {
     e.stopPropagation();
   });
+  card
+    .querySelector(".btn-outline-success")
+    .addEventListener("click", handleEditCard);
   return card;
 };
 
@@ -42,6 +46,13 @@ const handleCardClicked = (e) => {
   const card = e.target.closest(".card");
   const text = card.querySelector(".card-text").textContent;
   speak(text);
+};
+
+const handleEditCard = (e) => {
+  const card = e.target.closest(".card");
+  const cardText = card.querySelector(".card-text").textContent;
+  const cardImageUrl = card.querySelector(".card-img-top").src;
+  setEditModalValues(cardText, cardImageUrl);
 };
 
 export { generateCard };
