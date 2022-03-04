@@ -1,4 +1,4 @@
-import { speak } from "./../helper.js";
+import { speak } from "../helper.js";
 const modal = document.querySelector("#readTextModal");
 const textAreaElement = modal.querySelector("#readTextTextarea");
 const readBtn = document.querySelector("#readTextBtn");

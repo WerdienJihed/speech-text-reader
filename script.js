@@ -2,8 +2,8 @@ import { appendColumn } from "./modules/helper.js";
 import { populateVoiceList } from "./modules/modals/change-voice-modal.js";
 import "./modules/modals/create-modal.js";
 import "./modules/modals/edit-modal.js";
-import "./modules/modals/read-text-modal.js";
-
+import "./modules/modals/text-reader-modal.js";
+import "./modules/modals/confirmation-modal.js";
 /* Variables */
 const cards = [
   {
