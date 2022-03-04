@@ -1,4 +1,6 @@
 import { appendColumn, defaultImageUrl } from "./../helper.js";
+
+/* Selecting Elements */
 const modal = document.querySelector("#createNewItemModal");
 const newItemText = modal.querySelector("#newItemText");
 const errorMessage = modal.querySelector(".invalid-feedback");
@@ -6,10 +8,12 @@ const imageThumbnail = modal.querySelector(".img-thumbnail");
 const imageFileInput = modal.querySelector("#imageFileInput");
 const addBtn = modal.querySelector(".btn-success");
 
+/* Variables */
 let myModal = new bootstrap.Modal(
   document.getElementById("createNewItemModal")
 );
 
+/* Functions */
 const handleAdd = () => {
   if (newItemText.value === "") {
     newItemText.classList.add("is-invalid");
@@ -43,6 +47,7 @@ function handleFileUrlChanged() {
   }
 }
 
+/* Event listeners */
 addBtn.addEventListener("click", handleAdd);
 modal.addEventListener("hidden.bs.modal", handleClear);
 imageFileInput.addEventListener("change", handleFileUrlChanged, false);

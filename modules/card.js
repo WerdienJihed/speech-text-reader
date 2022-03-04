@@ -1,6 +1,7 @@
 import { speak } from "./helper.js";
 import { setValues as setEditModalValues } from "./modals/edit-modal.js";
 
+/* Functions */
 const generateCard = (text, imgUrl) => {
   const placeholder = document.createElement("div");
   const html = `<div class="card h-100 shadow ">

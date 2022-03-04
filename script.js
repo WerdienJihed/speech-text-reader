@@ -4,6 +4,7 @@ import "./modules/modals/create-modal.js";
 import "./modules/modals/edit-modal.js";
 import "./modules/modals/text-reader-modal.js";
 import "./modules/modals/confirmation-modal.js";
+
 /* Variables */
 const cards = [
   {

@@ -1,3 +1,4 @@
+/* Selecting Elements */
 const modal = document.querySelector("#editItemModal");
 const textElement = modal.querySelector("#editItemText");
 const errorMessage = modal.querySelector(".invalid-feedback");
@@ -5,6 +6,7 @@ const imageFileInput = modal.querySelector("#imageFileInput");
 const imageThumbnail = modal.querySelector(".img-thumbnail");
 const saveBtn = modal.querySelector(".btn-success");
 
+/* Variables */
 var myModal = new bootstrap.Modal(document.getElementById("editItemModal"));
 
 let cardToEdit = null;
@@ -42,6 +44,7 @@ function handleFileUrlChanged() {
   }
 }
 
+/* Event listeners */
 saveBtn.addEventListener("click", handleSave);
 imageFileInput.addEventListener("change", handleFileUrlChanged, false);
 modal.addEventListener("show.bs.modal", function (e) {
