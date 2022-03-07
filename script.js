@@ -8,19 +8,19 @@ import "./modules/modals/confirmation-modal.js";
 const cards = [
   {
     title: "I am hungry",
-    imgUrl: "/images/hungry.jpg",
+    imgUrl: "./images/hungry.jpg",
   },
   {
     title: "I am thirsty",
-    imgUrl: "/images/thirsty.png",
+    imgUrl: "./images/thirsty.png",
   },
   {
     title: "I am tired",
-    imgUrl: "/images/tired.jpg",
+    imgUrl: "./images/tired.jpg",
   },
   {
     title: "I am scared",
-    imgUrl: "/images/scared.jpg",
+    imgUrl: "./images/scared.jpg",
   },
 ];
 
