@@ -36,6 +36,33 @@ View the live demo: <a href="https://werdienjihed.github.io/speech-text-reader/"
 - **Main Page (index.html)**: View and interact with cards. Use the settings buttons to add items, change voice, or read text.
 - **Speech Recognition Page (SpeechRecognition.html)**: Click the microphone button to start listening and transcribe speech.
 
+## Project Structure
+
+```
+speech-text-reader/
+├── index.html                 # Main page with text-to-speech cards
+├── SpeechRecognition.html     # Speech recognition page
+├── script.js                  # Main JavaScript file
+├── style.css                  # Custom styles
+├── images/                    # Image assets
+│   ├── default.png
+│   ├── favicon.ico
+│   ├── hungry.jpg
+│   ├── scared.jpg
+│   ├── thirsty.png
+│   └── tired.jpg
+└── modules/                   # JavaScript modules
+    ├── card.js                # Card component logic
+    ├── helper.js              # Helper functions
+    ├── speechRecognition.js   # Speech recognition functionality
+    └── modals/                # Modal components
+        ├── change-voice-modal.js
+        ├── confirmation-modal.js
+        ├── create-modal.js
+        ├── edit-modal.js
+        └── text-reader-modal.js
+```
+
 ## Technologies Used
 
 - HTML5
@@ -43,10 +70,6 @@ View the live demo: <a href="https://werdienjihed.github.io/speech-text-reader/"
 - JavaScript (ES6 Modules)
 - Bootstrap 5
 - Web Speech API (for speech synthesis and recognition)
-
-## Contributing
-
-Contributions are welcome! Please fork the repository and submit a pull request.
 
 ## License
 
